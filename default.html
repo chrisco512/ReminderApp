@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ReminderApp</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- ReminderApp references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="js/main.js"></script>
+
+    <style>
+        body {
+            background-color: navy;
+        }
+        header {
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        section {
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reminder App</h1>
+    </header>
+    <section>
+        <p><label for="title">Select a date: </label>        </p>
+        <div id="datepicker" data-win-control="WinJS.UI.DatePicker"></div>
+        <p><label for="title">Title: </label></p>
+        <p><input id="title"/></p>
+        <p><label for="description">Message: </label></p>
+        <p><textarea id="description"></textarea></p>
+        <p><button id="generator" onclick="addReminder()">Add Reminder</button></p>
+    </section>
+</body>
+</html>
